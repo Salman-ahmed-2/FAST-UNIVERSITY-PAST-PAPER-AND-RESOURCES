@@ -1,0 +1,14 @@
+1. Write a C++ program to find the LCM (Least Common Multiple) of two given integers.
+2. How can you write a function in C++ that takes an array and sorts it in descending order?
+3. Implement a function in C++ that converts a decimal number to its binary representation.
+4. Write a C++ program to find the HCF (Highest Common Factor) of two given integers using the Euclidean algorithm.
+5. How would you write a C++ program to calculate the remainder when one integer is divided by another?
+6. Can you create an algorithm in C++ that converts a binary number to its decimal equivalent?
+7. Write a function in C++ that performs copys multiple arrays to a single array.
+8. Implement a function in C++ to find the prime factors of a given integer.
+9. Write a C++ program that checks if a number is a power of two or not.
+10. Implement a C++ program to find the minimum and maximum elements in an array.
+11. Can you create an algorithm in C++ that converts a decimal number to its hexadecimal representation?
+12. How would you write a C++ program to check if a given year is a leap year or not?
+13. Implement a C++ function that calculates the Fibonacci sequence up to a given number.
+14. Write a C++ program to find the smallest and largest element in a 2D array of integers.

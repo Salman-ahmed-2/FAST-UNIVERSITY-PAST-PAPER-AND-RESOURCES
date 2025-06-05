@@ -1,0 +1,130 @@
+//#include<iostream>
+//using namespace std;
+//
+//
+//int main()
+//{
+//	/*char*** ptr;
+//	ptr=new char** [3];
+//	for (int i = 0; i < 3; i++)
+//	{
+//		*(ptr + i) = new char* [3];
+//		for (int j = 0; j < 3; j++)
+//		{
+//			*(*(ptr + i) + j) = new char[3];
+//		}
+//	}
+//
+//
+//
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			for (int k = 0; k < 3; k++)
+//			{
+//				ptr[i][j][k]= i + j + k;
+//			}
+//		}
+//	}
+//
+//
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			delete[] ptr[i][j];
+//		}
+//		delete[] ptr[i];
+//	}
+//
+//	delete[] ptr;*/
+//
+//	//char a = 'a';
+//	////char b = '\0';
+//	//char* ptr = &a;
+//	//cout << "Without astrick : " << ptr << endl;
+//	//cout << "With astrick : " << *ptr << endl;
+//
+//	//char b= 'basb'; // a 97 b 98 = 195
+//	//char c = 'a';
+//	//cout << b << endl;
+//
+//	/*char arr2[]={'h','e','l','l','o','w'};
+//	char arr[] = "hel\0low";
+//
+//	cout << '\0' << endl;*/
+//
+//	char* ptr;
+//	char emp = 'b';
+//	ptr = &emp;
+//	cout << "Before Change : " << emp << endl;
+//	cout << "Before Change : " << *ptr << endl;
+//	*ptr = 'a';
+//	cout << "After Change : " << *ptr << endl;
+//	cout<< "After Change : " << emp << endl;
+//}
+//
+//
+//
+//
+//
+////int main()
+////{
+////	int*** ptr;
+////
+////	ptr = new int** [3]; // FOr pages
+////
+////	for (int i = 0; i < 3; i++)
+////	{
+////		//ptr[i] = new int* [3]; // For rows
+////		*(ptr + i) = new int* [3]; // For rows
+////		for (int j = 0; j < 3; j++)
+////		{
+////			*(*(ptr + i) + j) = new int[3];//for columns
+////			//ptr[i][j] = new int[3];//for columns
+////		}
+////	}
+////
+////	for (int i = 0; i < 3; i++)
+////	{
+////		for (int j = 0; j < 3; j++)
+////		{
+////			for (int k = 0; k < 3; k++)
+////			{
+////			//	ptr[i][j][k] = i + j + k;
+////				*(*(*(ptr + i) + j) + k) = i + j + k;
+////			}
+////		}
+////	}
+////
+////
+////	for (int i = 0; i < 3; i++)
+////	{
+////		cout << "==================================================" << endl;
+////		for (int j = 0; j < 3; j++)
+////		{
+////			for (int k = 0; k < 3; k++)
+////			{
+////				//cout << ptr[i][j][k] << " ";
+////				cout << *(*(*(ptr + i) + j) + k) << " ";
+////			}
+////			cout << endl;
+////		}
+////	}
+////
+////
+////
+////	for (int i = 0; i < 3; i++)
+////	{
+////		for (int j = 0; j < 3; j++)
+////		{
+////			//delete[] ptr[i][j]; //Columns deleted
+////			delete[] *(*(ptr + i) + j); //Columns deleted
+////		}
+////		//delete[] ptr[i]; //Rows deleted
+////		delete[] *(ptr + i); //Rows deleted
+////	}
+////	delete[] ptr; //Pages deleted
+////}
+

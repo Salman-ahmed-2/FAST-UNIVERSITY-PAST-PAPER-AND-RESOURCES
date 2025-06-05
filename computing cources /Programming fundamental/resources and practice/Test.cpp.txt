@@ -1,0 +1,84 @@
+//
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	//int arr[10]; // static memory allocation
+//	//int* ptr; // can only contain one memoery address
+//
+//	//ptr=new int[5]; // dynamic memory allocation
+//
+//	//for (int i = 0; i < 5; i++)
+//	//{
+//	//	ptr[i] = i + 1;
+//	//}
+//	//for (int i = 0; i < 5; i++)
+//	//{
+//	//	cout<<ptr[i]<<endl;
+//	//}
+//	////ptr[i] ==> *(ptr+i)
+//	//cout<<"0 index : " << ptr[0] << endl;
+//	//ptr += 1;
+//	//cout<<"0 index : " << ptr[0] << endl;
+//	//cout<<"5 index : "<< ptr[5] << endl;
+//	//// ptr[1]
+//	////*(ptr+1)
+//	////ptr=ptr+1
+//	///*cout<<"inital address : "<< ptr << endl;
+//	//cout<<"Adreess after 1 increment : " << ptr + 1 << endl;
+//	//cout<<"Adreess default : " << ptr << endl;
+//	//ptr = ptr + 1;
+//	//cout<<"Adreess after 1 increment : " << ptr << endl;*/
+//
+//	int** ptr; // 5 memory address hold
+//	ptr = new int* [5];
+//
+//	for (int i = 0; i < 5; i++)
+//	{
+//		// 5 memory address hold 5 values
+//		ptr[i]=new int[5];
+//	}
+//
+//	for (int i = 0; i < 5; i++)
+//	{
+//		for (int j = 0; j < 5; j++)
+//		{
+//			// ptr[i] ==> *(ptr+i)
+//			// ptr[i][j] ==> *(*(ptr+i)+j)
+//			// ptr[i][j][k] ==> *(*(*(ptr+i)+j)+k)
+//			ptr[i][j] = i + j;
+//		}
+//	}
+//
+//	for (int i = 0; i < 5; i++) // colums deleted
+//	{
+//		delete[] ptr[i];
+//	}
+//	delete[] ptr; //rows deleted
+//
+//
+//	int*** darray;
+//	darray = new int** [5];
+//
+//	for (int i = 0; i < 5; i++)
+//	{
+//		darray[i] = new int* [5];
+//		for (int j = 0; j < 5; j++)
+//		{
+//			darray[i][j] = new int[5];
+//		}
+//	}
+//
+//	for (int i = 0; i < 5; i++) 
+//	{
+//		for (int j = 0; j < 5; j++)
+//		{
+//			delete[] darray[i][j]; // colums deleted
+//		}
+//		delete[] darray[i]; // rows deleted
+//	}
+//	delete[] darray; //pages deleted
+//
+//	
+//}
+//

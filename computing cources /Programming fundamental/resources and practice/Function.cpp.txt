@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+//
+//void fun(int* a)
+//{
+//	cout << *a << endl;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int* ptr = &a;
+//	fun(ptr);
+//	int b = 20;
+//	fun(&b);
+//}
+
+void Mystery(int* arr, int size)
+{
+    int* ptr = arr;
+    int* end = arr + size - 1;
+    while (ptr < end)
+    {
+        int temp = *ptr;
+        *ptr = *end;
+        *end = temp;
+        ptr++;
+        end--;
+    }
+    
+}
+
+int main()
+{
+    int arr[5] = { 1,2,3,4,5 };
+    for (int i = 0; i < 5; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+    Mystery(arr, 5);
+    
+    for (int i = 0; i < 5; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}

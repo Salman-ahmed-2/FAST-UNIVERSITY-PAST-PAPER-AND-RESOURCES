@@ -1,0 +1,159 @@
+#include<iostream>
+using namespace std;
+
+//
+///*
+//	6
+//
+//	2|6
+//	---
+//	2|3
+//
+//*/
+//
+////int binaryconverter(int number)
+////{
+////	int temp = number;
+////	int binary = 0;
+////	int power = 1;
+////	while (temp!=0)
+////	{
+////		binary += power * (temp % 2); // 0 1 0 1
+////		temp = temp / 2;
+////		power = power * 10;//1 10 100 1000
+////	}
+////	//binary += power * 1;
+////	return binary;
+////}
+////
+////int Octalconverter(int number)
+////{
+////	int temp = number;
+////	int Octal = 0;
+////	int power = 1;
+////	while (temp != 0)
+////	{
+////		Octal += power * (temp % 8); // 0 1 0 1
+////		temp = temp / 8;
+////		power = power * 10;//1 10 100 1000
+////	}
+////	return Octal;
+////}
+//string Convert(int number,int num){
+//	int temp = number;
+//	int Octal = 0;
+//	int power = 1;
+//	string asnwer = "";
+//	while (temp != 0)
+//	{
+//		int mod = (temp % num);
+//		if (mod >= 0 && mod <= 9)
+//		{
+//			asnwer = char(mod + '0') + asnwer;
+//		}
+//		else
+//		{
+//			asnwer = (char)(mod + 55) + asnwer;//65 = A
+//		}
+//		temp = temp / num;
+//		power = power * 10;
+//	}
+//	return asnwer;
+//}
+//int main()
+//{
+//	cout << Convert(100, 16);
+//	/*int number;
+//	int Base;
+//	cout << "enter the number : ";
+//	cin >> number;
+//	cout<< "enter the base : ";
+//	cin >> Base;
+//
+//	cout<<"Converted to "<<Base<<" number system : "<<Convert(number,Base);*/
+//
+//
+//
+//	/*if (choice == 1)
+//	{
+//		if (number == 0)
+//		{
+//			cout<<"Binary : "<<0;
+//		}
+//		else
+//		{
+//			cout<<"Binary : "<<binaryconverter(number);
+//		}
+//	}
+//	else
+//	{
+//		if (number == 0)
+//		{
+//			cout<<"Octal = "<<"0";
+//		}
+//		else
+//		{
+//			cout<<"Octal = "<<Octalconverter(number);
+//		}
+//	}*/
+//}
+
+//const int s = 3;
+//int* listMystery(int list[][::s]) {
+//	int i = 1, k = 0;
+//	int* n = new int[::s]; 
+//	for (int i = 0; i < ::s; ++i) // n {24,9,1}
+//		n[i] = 0;
+//	while (i < ::s)
+//	{
+//		int j = ::s - 1; // 2
+//		while (j >= i)
+//		{
+//			// 2 2 		1*1
+//			n[k++] = list[j][i] * list[i][j];
+//			j = j - 1; // 1
+//		}
+//		i = i + 1; // 3
+//	}
+//	return n;
+//}
+//void displayMystery(int* arr) {
+//	cout << "[ ";
+//	// n {24,9,1}
+//	for (int i = 0; i < ::s; ++i)
+//		cout << arr[i] << (i != (::s - 1) ? " , " : " ");
+//	cout << "]" << endl;
+//	//[24 , 9 , 1 ]
+//}
+//int main() {
+//	int L[][::s] = { {8, 9, 4}, {2, 3, 4}, {7, 6, 1} };
+//	int* ptr = listMystery(L);
+//	displayMystery(ptr);
+//	delete[] ptr;
+//	return 0;
+//}
+
+// ternary operture
+int binary(int number)
+{
+	int temp = number;
+	int binary = 0;
+	int power = 1;
+	while (temp) // temp 0
+	{
+		binary += power * (temp % 2); 
+		temp = temp >> 8;
+		power = power * 10;
+	}
+	return binary;
+}
+
+//int main()
+//{
+//	void* vp;
+//	int a = 69;
+//	vp = &a;
+//	cout << (char*)vp << endl;
+//	cout << (int*)vp << endl;
+//	cout << (float*)vp << endl;
+//}
